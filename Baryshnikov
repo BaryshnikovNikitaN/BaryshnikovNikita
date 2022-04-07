@@ -1,0 +1,15 @@
+void node_extend_output(int matrix[][SIZE], int size)
+{
+    for(int i = 0; i < size; ++i)
+    {
+        int counter = 0;
+        for(int j = 0; j < size; ++j)
+        {
+            if(matrix[i][j] == 1)
+            {
+                counter++;
+            }
+        }
+        cout << counter << " ";
+    }
+}
